@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Routine Maker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Daily Routine Maker</h1>
+
+        <div id="routine-input-section">
+            <div class="days-container">
+                <!-- Routine list for each day -->
+                <div class="day" id="Monday">
+                    <h2>Monday</h2>
+                    <ul id="Monday-list"></ul>
+                    <input type="text" id="Monday-input" placeholder="Add Monday's routine">
+                    <button onclick="addRoutine('Monday')">Add Routine</button>
+                </div>
+
+                <div class="day" id="Tuesday">
+                    <h2>Tuesday</h2>
+                    <ul id="Tuesday-list"></ul>
+                    <input type="text" id="Tuesday-input" placeholder="Add Tuesday's routine">
+                    <button onclick="addRoutine('Tuesday')">Add Routine</button>
+                </div>
+
+                <div class="day" id="Wednesday">
+                    <h2>Wednesday</h2>
+                    <ul id="Wednesday-list"></ul>
+                    <input type="text" id="Wednesday-input" placeholder="Add Wednesday's routine">
+                    <button onclick="addRoutine('Wednesday')">Add Routine</button>
+                </div>
+
+                <div class="day" id="Thursday">
+                    <h2>Thursday</h2>
+                    <ul id="Thursday-list"></ul>
+                    <input type="text" id="Thursday-input" placeholder="Add Thursday's routine">
+                    <button onclick="addRoutine('Thursday')">Add Routine</button>
+                </div>
+
+                <div class="day" id="Friday">
+                    <h2>Friday</h2>
+                    <ul id="Friday-list"></ul>
+                    <input type="text" id="Friday-input" placeholder="Add Friday's routine">
+                    <button onclick="addRoutine('Friday')">Add Routine</button>
+                </div>
+
+                <div class="day" id="Saturday">
+                    <h2>Saturday</h2>
+                    <ul id="Saturday-list"></ul>
+                    <input type="text" id="Saturday-input" placeholder="Add Saturday's routine">
+                    <button onclick="addRoutine('Saturday')">Add Routine</button>
+                </div>
+
+                <div class="day" id="Sunday">
+                    <h2>Sunday</h2>
+                    <ul id="Sunday-list"></ul>
+                    <input type="text" id="Sunday-input" placeholder="Add Sunday's routine">
+                    <button onclick="addRoutine('Sunday')">Add Routine</button>
+                </div>
+            </div>
+
+            
+            <button onclick="showRoutineChart()">Show Routine Chart</button>
+        </div>
+
+        
+        <div id="routine-chart-section" style="display:none;">
+            <h2>Weekly Routine Chart</h2>
+            <table id="routine-chart">
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Routine</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+            <button onclick="goBackToInput()">Back to Input</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
